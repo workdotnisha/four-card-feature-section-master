@@ -45,7 +45,6 @@ h3{
 .detail{
     color: #CCCCCC;
    font-weight: 600;
-    /* font-size: 10px; */
 }
 
   .card-container {
@@ -108,4 +107,19 @@ img{
   
   .col-2 > div {
     flex: 1; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+    .col-1, .col-3, .row-1, .row-2 {
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .detail-container{
+        width: 400px;
+    }
+    
   }
